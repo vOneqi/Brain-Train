@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E02B97C2AF31FC600D026CB /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E02B97B2AF31FC500D026CB /* correct.mp3 */; };
+		2E02B97E2AF31FD800D026CB /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E02B97D2AF31FD700D026CB /* wrong.mp3 */; };
+		2E02B9802AF325E300D026CB /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E02B97F2AF325DE00D026CB /* success.mp3 */; };
+		2E02B9832AF32BCF00D026CB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2E02B9822AF32BCF00D026CB /* FirebaseAuth */; };
+		2E02B9852AF331EE00D026CB /* WelcomeAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E02B9842AF331ED00D026CB /* WelcomeAccount.swift */; };
+		2E1302372AED757B00FE0123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1302362AED757B00FE0123 /* AppDelegate.swift */; };
+		2E1302392AED757B00FE0123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1302382AED757B00FE0123 /* SceneDelegate.swift */; };
+		2E13023B2AED757B00FE0123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13023A2AED757B00FE0123 /* ViewController.swift */; };
+		2E13023E2AED757B00FE0123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E13023C2AED757B00FE0123 /* Main.storyboard */; };
+		2E1302402AED758800FE0123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E13023F2AED758800FE0123 /* Assets.xcassets */; };
+		2E1302432AED758800FE0123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1302412AED758800FE0123 /* LaunchScreen.storyboard */; };
+		2E13024E2AED758A00FE0123 /* BrainGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13024D2AED758A00FE0123 /* BrainGamesTests.swift */; };
+		2E1302582AED758A00FE0123 /* BrainGamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1302572AED758A00FE0123 /* BrainGamesUITests.swift */; };
+		2E13025A2AED758A00FE0123 /* BrainGamesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1302592AED758A00FE0123 /* BrainGamesUITestsLaunchTests.swift */; };
+		2E1D0B112AF2D8EF009321E7 /* confetti29.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D0B102AF2D8EE009321E7 /* confetti29.gif */; };
+		2E4E97F02AEF0B3800BAAC71 /* SecondLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E97EF2AEF0B3800BAAC71 /* SecondLevelScreen.swift */; };
+		2E4E97F22AEF0D5400BAAC71 /* SecondLevelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E97F12AEF0D5400BAAC71 /* SecondLevelGame.swift */; };
+		2EB4172C2AF0EBA100BD2EAD /* ThirdLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4172B2AF0EBA100BD2EAD /* ThirdLevelScreen.swift */; };
+		2EB4172E2AF0EDCC00BD2EAD /* ThirdLevelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4172D2AF0EDCB00BD2EAD /* ThirdLevelGame.swift */; };
+		2EB417302AF1C72F00BD2EAD /* FinalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4172F2AF1C72F00BD2EAD /* FinalScreen.swift */; };
+		2EEC6E8A2AEE997C00EAFB4F /* FirstLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6E892AEE997900EAFB4F /* FirstLevelScreen.swift */; };
+		2EEC6E8C2AEEAA5800EAFB4F /* FirstLevelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6E8B2AEEAA5700EAFB4F /* FirstLevelGame.swift */; };
+		2EFE13702AF2E54C00C27479 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE136F2AF2E54C00C27479 /* AudioManager.swift */; };
+		2EFE13722AF2EA0A00C27479 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EFE13712AF2EA0900C27479 /* backgroundMusic.mp3 */; };
+		2EFE13812AF30A6B00C27479 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE13802AF30A6B00C27479 /* LoginViewController.swift */; };
+		2EFE13832AF30CB600C27479 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE13822AF30CB600C27479 /* CreateAccountViewController.swift */; };
+		2EFE13852AF30EA900C27479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EFE13842AF30EA900C27479 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E13024A2AED758A00FE0123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E13022B2AED757B00FE0123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E1302322AED757B00FE0123;
+			remoteInfo = BrainGames;
+		};
+		2E1302542AED758A00FE0123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E13022B2AED757B00FE0123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E1302322AED757B00FE0123;
+			remoteInfo = BrainGames;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E02B97B2AF31FC500D026CB /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		2E02B97D2AF31FD700D026CB /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		2E02B97F2AF325DE00D026CB /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		2E02B9842AF331ED00D026CB /* WelcomeAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAccount.swift; sourceTree = "<group>"; };
+		2E1302332AED757B00FE0123 /* Brain Train.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Train.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1302362AED757B00FE0123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E1302382AED757B00FE0123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E13023A2AED757B00FE0123 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E13023D2AED757B00FE0123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E13023F2AED758800FE0123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E1302422AED758800FE0123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E1302442AED758900FE0123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1302492AED758A00FE0123 /* Brain TrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain TrainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E13024D2AED758A00FE0123 /* BrainGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainGamesTests.swift; sourceTree = "<group>"; };
+		2E1302532AED758A00FE0123 /* Brain TrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brain TrainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1302572AED758A00FE0123 /* BrainGamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainGamesUITests.swift; sourceTree = "<group>"; };
+		2E1302592AED758A00FE0123 /* BrainGamesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainGamesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E1D0B102AF2D8EE009321E7 /* confetti29.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = confetti29.gif; path = ../../../Downloads/confetti29.gif; sourceTree = "<group>"; };
+		2E4E97EF2AEF0B3800BAAC71 /* SecondLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelScreen.swift; sourceTree = "<group>"; };
+		2E4E97F12AEF0D5400BAAC71 /* SecondLevelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelGame.swift; sourceTree = "<group>"; };
+		2EB4172B2AF0EBA100BD2EAD /* ThirdLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLevelScreen.swift; sourceTree = "<group>"; };
+		2EB4172D2AF0EDCB00BD2EAD /* ThirdLevelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLevelGame.swift; sourceTree = "<group>"; };
+		2EB4172F2AF1C72F00BD2EAD /* FinalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScreen.swift; sourceTree = "<group>"; };
+		2EEC6E882AEDB62000EAFB4F /* BrainGames.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrainGames.entitlements; sourceTree = "<group>"; };
+		2EEC6E892AEE997900EAFB4F /* FirstLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLevelScreen.swift; sourceTree = "<group>"; };
+		2EEC6E8B2AEEAA5700EAFB4F /* FirstLevelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLevelGame.swift; sourceTree = "<group>"; };
+		2EFE136F2AF2E54C00C27479 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		2EFE13712AF2EA0900C27479 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		2EFE13802AF30A6B00C27479 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2EFE13822AF30CB600C27479 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		2EFE13842AF30EA900C27479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E1302302AED757B00FE0123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E02B9832AF32BCF00D026CB /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1302462AED758A00FE0123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1302502AED758A00FE0123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E02B9862AF3332D00D026CB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2EFE136F2AF2E54C00C27479 /* AudioManager.swift */,
+				2E02B97F2AF325DE00D026CB /* success.mp3 */,
+				2E02B97B2AF31FC500D026CB /* correct.mp3 */,
+				2E02B97D2AF31FD700D026CB /* wrong.mp3 */,
+				2EFE13712AF2EA0900C27479 /* backgroundMusic.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2E13022A2AED757B00FE0123 = {
+			isa = PBXGroup;
+			children = (
+				2E1302352AED757B00FE0123 /* BrainGames */,
+				2E13024C2AED758A00FE0123 /* BrainGamesTests */,
+				2E1302562AED758A00FE0123 /* BrainGamesUITests */,
+				2E1302342AED757B00FE0123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E1302342AED757B00FE0123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E1302332AED757B00FE0123 /* Brain Train.app */,
+				2E1302492AED758A00FE0123 /* Brain TrainTests.xctest */,
+				2E1302532AED758A00FE0123 /* Brain TrainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E1302352AED757B00FE0123 /* BrainGames */ = {
+			isa = PBXGroup;
+			children = (
+				2E02B9862AF3332D00D026CB /* Sounds */,
+				2EEC6E882AEDB62000EAFB4F /* BrainGames.entitlements */,
+				2E1302362AED757B00FE0123 /* AppDelegate.swift */,
+				2E1302382AED757B00FE0123 /* SceneDelegate.swift */,
+				2E13023A2AED757B00FE0123 /* ViewController.swift */,
+				2E13023C2AED757B00FE0123 /* Main.storyboard */,
+				2EFE137B2AF3060900C27479 /* User Authentication */,
+				2EB4172F2AF1C72F00BD2EAD /* FinalScreen.swift */,
+				2E1D0B102AF2D8EE009321E7 /* confetti29.gif */,
+				2EB4172D2AF0EDCB00BD2EAD /* ThirdLevelGame.swift */,
+				2EB4172B2AF0EBA100BD2EAD /* ThirdLevelScreen.swift */,
+				2E4E97F12AEF0D5400BAAC71 /* SecondLevelGame.swift */,
+				2E4E97EF2AEF0B3800BAAC71 /* SecondLevelScreen.swift */,
+				2EEC6E8B2AEEAA5700EAFB4F /* FirstLevelGame.swift */,
+				2EEC6E892AEE997900EAFB4F /* FirstLevelScreen.swift */,
+				2E13023F2AED758800FE0123 /* Assets.xcassets */,
+				2E1302412AED758800FE0123 /* LaunchScreen.storyboard */,
+				2E1302442AED758900FE0123 /* Info.plist */,
+				2EFE13842AF30EA900C27479 /* GoogleService-Info.plist */,
+			);
+			path = BrainGames;
+			sourceTree = "<group>";
+		};
+		2E13024C2AED758A00FE0123 /* BrainGamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E13024D2AED758A00FE0123 /* BrainGamesTests.swift */,
+			);
+			path = BrainGamesTests;
+			sourceTree = "<group>";
+		};
+		2E1302562AED758A00FE0123 /* BrainGamesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E1302572AED758A00FE0123 /* BrainGamesUITests.swift */,
+				2E1302592AED758A00FE0123 /* BrainGamesUITestsLaunchTests.swift */,
+			);
+			path = BrainGamesUITests;
+			sourceTree = "<group>";
+		};
+		2EFE137B2AF3060900C27479 /* User Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2E02B9842AF331ED00D026CB /* WelcomeAccount.swift */,
+				2EFE13822AF30CB600C27479 /* CreateAccountViewController.swift */,
+				2EFE13802AF30A6B00C27479 /* LoginViewController.swift */,
+			);
+			path = "User Authentication";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E1302322AED757B00FE0123 /* Brain Train */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E13025D2AED758A00FE0123 /* Build configuration list for PBXNativeTarget "Brain Train" */;
+			buildPhases = (
+				2E13022F2AED757B00FE0123 /* Sources */,
+				2E1302302AED757B00FE0123 /* Frameworks */,
+				2E1302312AED757B00FE0123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brain Train";
+			packageProductDependencies = (
+				2E02B9822AF32BCF00D026CB /* FirebaseAuth */,
+			);
+			productName = BrainGames;
+			productReference = 2E1302332AED757B00FE0123 /* Brain Train.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E1302482AED758A00FE0123 /* Brain TrainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1302602AED758A00FE0123 /* Build configuration list for PBXNativeTarget "Brain TrainTests" */;
+			buildPhases = (
+				2E1302452AED758A00FE0123 /* Sources */,
+				2E1302462AED758A00FE0123 /* Frameworks */,
+				2E1302472AED758A00FE0123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E13024B2AED758A00FE0123 /* PBXTargetDependency */,
+			);
+			name = "Brain TrainTests";
+			productName = BrainGamesTests;
+			productReference = 2E1302492AED758A00FE0123 /* Brain TrainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E1302522AED758A00FE0123 /* Brain TrainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1302632AED758A00FE0123 /* Build configuration list for PBXNativeTarget "Brain TrainUITests" */;
+			buildPhases = (
+				2E13024F2AED758A00FE0123 /* Sources */,
+				2E1302502AED758A00FE0123 /* Frameworks */,
+				2E1302512AED758A00FE0123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E1302552AED758A00FE0123 /* PBXTargetDependency */,
+			);
+			name = "Brain TrainUITests";
+			productName = BrainGamesUITests;
+			productReference = 2E1302532AED758A00FE0123 /* Brain TrainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E13022B2AED757B00FE0123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2E1302322AED757B00FE0123 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					2E1302482AED758A00FE0123 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2E1302322AED757B00FE0123;
+					};
+					2E1302522AED758A00FE0123 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2E1302322AED757B00FE0123;
+					};
+				};
+			};
+			buildConfigurationList = 2E13022E2AED757B00FE0123 /* Build configuration list for PBXProject "Brain Train" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E13022A2AED757B00FE0123;
+			packageReferences = (
+				2E02B9812AF32BCE00D026CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2E1302342AED757B00FE0123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E1302322AED757B00FE0123 /* Brain Train */,
+				2E1302482AED758A00FE0123 /* Brain TrainTests */,
+				2E1302522AED758A00FE0123 /* Brain TrainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E1302312AED757B00FE0123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1302432AED758800FE0123 /* LaunchScreen.storyboard in Resources */,
+				2E02B97C2AF31FC600D026CB /* correct.mp3 in Resources */,
+				2EFE13722AF2EA0A00C27479 /* backgroundMusic.mp3 in Resources */,
+				2E1302402AED758800FE0123 /* Assets.xcassets in Resources */,
+				2E02B9802AF325E300D026CB /* success.mp3 in Resources */,
+				2E13023E2AED757B00FE0123 /* Main.storyboard in Resources */,
+				2E1D0B112AF2D8EF009321E7 /* confetti29.gif in Resources */,
+				2EFE13852AF30EA900C27479 /* GoogleService-Info.plist in Resources */,
+				2E02B97E2AF31FD800D026CB /* wrong.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1302472AED758A00FE0123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1302512AED758A00FE0123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E13022F2AED757B00FE0123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E02B9852AF331EE00D026CB /* WelcomeAccount.swift in Sources */,
+				2EFE13832AF30CB600C27479 /* CreateAccountViewController.swift in Sources */,
+				2E4E97F22AEF0D5400BAAC71 /* SecondLevelGame.swift in Sources */,
+				2EB417302AF1C72F00BD2EAD /* FinalScreen.swift in Sources */,
+				2E13023B2AED757B00FE0123 /* ViewController.swift in Sources */,
+				2EEC6E8C2AEEAA5800EAFB4F /* FirstLevelGame.swift in Sources */,
+				2EB4172E2AF0EDCC00BD2EAD /* ThirdLevelGame.swift in Sources */,
+				2E4E97F02AEF0B3800BAAC71 /* SecondLevelScreen.swift in Sources */,
+				2EB4172C2AF0EBA100BD2EAD /* ThirdLevelScreen.swift in Sources */,
+				2EEC6E8A2AEE997C00EAFB4F /* FirstLevelScreen.swift in Sources */,
+				2E1302372AED757B00FE0123 /* AppDelegate.swift in Sources */,
+				2EFE13702AF2E54C00C27479 /* AudioManager.swift in Sources */,
+				2EFE13812AF30A6B00C27479 /* LoginViewController.swift in Sources */,
+				2E1302392AED757B00FE0123 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E1302452AED758A00FE0123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E13024E2AED758A00FE0123 /* BrainGamesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E13024F2AED758A00FE0123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1302582AED758A00FE0123 /* BrainGamesUITests.swift in Sources */,
+				2E13025A2AED758A00FE0123 /* BrainGamesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E13024B2AED758A00FE0123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E1302322AED757B00FE0123 /* Brain Train */;
+			targetProxy = 2E13024A2AED758A00FE0123 /* PBXContainerItemProxy */;
+		};
+		2E1302552AED758A00FE0123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E1302322AED757B00FE0123 /* Brain Train */;
+			targetProxy = 2E1302542AED758A00FE0123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E13023C2AED757B00FE0123 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E13023D2AED757B00FE0123 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E1302412AED758800FE0123 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1302422AED758800FE0123 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E13025B2AED758A00FE0123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E13025C2AED758A00FE0123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E13025E2AED758A00FE0123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrainGames/BrainGames.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7UG4T4D9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrainGames/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nwankwo.BrainGames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E13025F2AED758A00FE0123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrainGames/BrainGames.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7UG4T4D9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrainGames/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nwankwo.BrainGames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E1302612AED758A00FE0123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nwankwo.BrainGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brain Train.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brain Train";
+			};
+			name = Debug;
+		};
+		2E1302622AED758A00FE0123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nwankwo.BrainGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brain Train.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brain Train";
+			};
+			name = Release;
+		};
+		2E1302642AED758A00FE0123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nwankwo.BrainGamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrainGames;
+			};
+			name = Debug;
+		};
+		2E1302652AED758A00FE0123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nwankwo.BrainGamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrainGames;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E13022E2AED757B00FE0123 /* Build configuration list for PBXProject "Brain Train" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E13025B2AED758A00FE0123 /* Debug */,
+				2E13025C2AED758A00FE0123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E13025D2AED758A00FE0123 /* Build configuration list for PBXNativeTarget "Brain Train" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E13025E2AED758A00FE0123 /* Debug */,
+				2E13025F2AED758A00FE0123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1302602AED758A00FE0123 /* Build configuration list for PBXNativeTarget "Brain TrainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1302612AED758A00FE0123 /* Debug */,
+				2E1302622AED758A00FE0123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1302632AED758A00FE0123 /* Build configuration list for PBXNativeTarget "Brain TrainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1302642AED758A00FE0123 /* Debug */,
+				2E1302652AED758A00FE0123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E02B9812AF32BCE00D026CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E02B9822AF32BCF00D026CB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E02B9812AF32BCE00D026CB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2E13022B2AED757B00FE0123 /* Project object */;
+}
