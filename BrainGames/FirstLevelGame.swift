@@ -238,13 +238,12 @@ class FirstLevelGame: UIViewController {
      If more time things to add:
      1. Notif if leaving screen | DONE
      2. Stop user from making input while pattern showing | DONE
-     3. Add best points system (with login)
      4. Add background music | DONE
      5. Logo | DONE
      6. Add constraints
      7. Lock orientation | DONE
      8. Confetti when done | DONE
-     9. Add sound effects
+     9. Add sound effects | DONE
      */
     
     
